@@ -1,0 +1,405 @@
+.contenedor{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(/src/components/image/Fondo-1.png);
+    background-size: cover;
+    background-position: center;
+}
+.nav-var{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 75px;
+    cursor: pointer;
+}
+
+.nav-var .uli .lista{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-var .uli .lista .ala{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: .4s;
+    text-transform: uppercase;
+}
+
+.nav-var .uli .lista::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #da0070;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .5s;
+}
+
+.nav-var .uli .lista:hover::after{
+    width: 100%;
+}
+
+.caja{
+    width: 100%;
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.caja .titulo{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.caja .parrafo{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.btn-1{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #da0070;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.color{
+    background: #da0070;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn-1:hover .color{
+    width: 100%;
+}
+.btn-1:hover{
+    border: none;
+}
+.logo:hover{
+    color: #da0070;
+}
+.titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 5px
+}
+.efe{
+    position: relative;
+    display: inline-block;
+    color: #5b1d3d;
+    font-family: Oswald, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 20px;
+    text-align: center;
+    transition: .5s;
+    text-shadow: 0 5px 0 rgb(0, 0, 0),
+    0 10px 40px rgba(0, 0, 0, 0),
+    0 20px 30px rgba(0, 0, 0, 0),
+    20px 20px 20px rgba(0, 0, 0, 0)
+}
+.efe:hover{
+    text-shadow:  -10px 10px rgb(0, 0, 0),
+    0 10px 40px rgba(0, 0, 0, .2),
+    0 20px 30px rgba(0, 0, 0, .5),
+    20px 20px 20px rgba(0, 0, 0, .5)
+}
+
+.efe:nth-child(1)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'D';
+}
+.efe:nth-child(1)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'D';
+}
+.efe:nth-child(2)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'U';
+}
+.efe:nth-child(2)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'U';
+}
+
+.efe:nth-child(3)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'L';
+}
+.efe:nth-child(3)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'L';
+}
+
+.efe:nth-child(4)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'C';
+}
+.efe:nth-child(4)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'C';
+}
+
+.efe:nth-child(5)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'E';
+}
+.efe:nth-child(5)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'E';
+}
+
+.efe:nth-child(6)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: '-';
+}
+.efe:nth-child(6)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: '-';
+}
+.efe:nth-child(7)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'D';
+}
+.efe:nth-child(7)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'D';
+}
+.efe:nth-child(8)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'E';
+}
+.efe:nth-child(8)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'E';
+}
+.efe:nth-child(9)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'L';
+}
+.efe:nth-child(9)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'L';
+}
+.efe:nth-child(10)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'I';
+}
+.efe:nth-child(10)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'I';
+}
+.efe:nth-child(11)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'C';
+}
+.efe:nth-child(11)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'C';
+}
+.efe:nth-child(12)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'I';
+}
+.efe:nth-child(12)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'I';
+}
+.efe:nth-child(13)::before{
+    top: -5px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #e3135d;
+    transition: .5s;
+    z-index: 1;
+    content: 'A';
+}
+.efe:nth-child(13)::after{
+    top: -10px;
+    left: 0;
+    position: absolute;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d64587;
+    transition: .5s;
+    z-index: 2;
+    content: 'A';
+}
+.efe:hover::before{
+    top: -10px;
+    left: 10px;
+}
+.efe:hover::after{
+    top: -20px;
+    left: 20px;
+}

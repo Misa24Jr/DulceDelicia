@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+}
+.success-2{
+    background: gray;
+    border-radius: 5px;
+    padding: 15px;
+    opacity: 0.5;
+    font-weight: bold;
+}
